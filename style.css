@@ -1,4 +1,9 @@
 /*style sheet*/
+
+/* added smooth scrolling for HW19*/
+html {
+    scroll-behavior: smooth;
+}
 /* header component */
 .header {
     background-color: #3a2d32;
