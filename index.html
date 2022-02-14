@@ -1,162 +1,110 @@
 <!DOCTYPE html>
 <html>
-<title> Andy Reese Portfolio
-</title>
-
-<head> 
-    <link href="style.css" rel="stylesheet" type="text/css">
-    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Serif:wght@100&family=Oleo+Script&family=Open+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Serif:wght@100&family=Montserrat:wght@300&family=Oleo+Script&family=Open+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
-</head>
-<body>
-
-<!--header with logo and nav HW17 -->
-<header class="header" >
-    <div class="Logo inline-block">
-        <img src="images/logo2.png" class="logo">
-    </div>
-    <div class="inline-block">
-        <ul class="navButton">
-            <li>Work</li>
-            <li>About</li>
-            <li>Contact</li>
-        </ul>
-    </div>
-</header>
-
-<!-- body with hero image and about me section HW17-->
-    <section class="heroImgBox"> 
-        <img src="images/heroimage3.png" class="heroImg">
-        <div class="textBox">
-            <h1 class="h1"> Welcome! <br>I'm Andy Reese
-            </h1>
+  <head>
+    <title>Andrew Reese Portfolio</title>
+    <link href="style.css" type="text/css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Fugaz+One&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&family=Oleo+Script&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <header>
+      <img src="images/logo2.png" class="logo">
+      <ul>
+        <li id="About">ABOUT</li>
+        <li id="Skills">SKILLS</li>
+        <li id="Work">WORK</li>
+        <li>CONTACT</li>
+      </ul>
+    </header>
+    <section class="heroImg">
+       
+       <div class="content">
+        <img src="images/Frame 1.png" class="bioimage">
+        <h1>Andrew Reese</h1>
+        <p>Who am I? <br>I am a UX Designer who loves to build! Apps, Websites, and even 
+          furniture and models! As you might guess, I specialize in product
+          design, wireframing, and prototyping. My goal is to create products that
+          are enjoyable to use and bring peak utility to my users.</p>
+        <button id="downloadResume">Download Resume</button>
+        <div id="myModal" class="modal">
+          <!-- Modal content -->
+          <div class="modal-content">
+            <span class="close">&times;</span>
+            <p>Thanks for downloading my resume! <br> If you have any questions, please feel free to contact me.</p>
+          </div>
         </div>
+      </div>
+    </section>
+    <h1 class="heading">My Skills</h1>
+    <section class="flexContainer">
+      <div>
+        <img src="images/creativity.png">
+        <h3>Creativity</h3>
+        <p>Brainstorming, especially over coffee, is a treat for me. 
+          I try to approach problems knowing that more than one solutution 
+          can exist. Often nature and craftsmanship from the past are sources
+          of inspiration to me.</p>
+      </div>
+      <div>
+        <img src="images/wireframing.png">
+        <h3>Wire-framing & prototyping</h3>
+        <p>I approach wire-framing and prototyping from the perspective 
+          that 'less is more'. Sites and apps should be easy for the user to navigate
+          and intuitive to understand. My favorite tools are Figma, Miro, and InVision.</p>
+      </div>
+      <div>
+        <img src="images/projmang.png">
+        <h3>Project Management</h3>
+        <p>I am a planner and logically-minded by nature, so Project
+          management comes easily to me. In my latest project, I facilitated 
+          daily stand-ups and assigned task according to team member effieciencies.</p>
+      </div>
     </section>
 
-    <section class="AboutMe">
-        <div class="aboutMeText aboutBlock">
-            <h1 class="h1"> Who am I?
-
-            </h1>
-            <h2 class="h2">
-               I am a UX Designer who loves to build! Apps, Websites, and even 
-               furniture and models! As you might guess, I specialize in product
-               design, wireframing, and prototyping. My goal is to create products that
-               are enjoyable to use and bring peak utility to my users.
-            </h2>
-            <button type="button" class="button">
-                Resume
-            </button>
+    <section class="myWork">
+      <h1 class="headingwork">My Work</h1>
+      <div class="workGrid">
+        <div class="img1 workimg">
+          <img src="images/HD2.png">
         </div>
-        <img src="images/BioImage2.png" class="bioImg aboutBlock">
+        <div class="content1">
+          <h4>Houndoogle</h4>
+          <p>Houndoogle us an original mobile app deisgned by dog owners
+            for dog owners. It's goal is to make finding vets, parks
+            shops, and other dog-friendly places easier for dog owners.</p>
+          <button>View Project</button>
+        </div>
+        <div class="img2 workimg">
+          <img src="images/DOI2.png">
+        </div>
+        <div class="content2">
+          <h4>Department of the Interior Site Redesign</h4>
+          <p>The Dept. of the Interior website embodies the term "goverment issued."
+            I redesigned the site to be more enjoyable to navigate and the capture
+            the spirit of those the DOI serves</p>
+          <button>View Project</button>
+        </div>
+        <div class="img3 workimg">
+          <img src="images/SOS2.png">
+        </div>
+        <div class="content3">
+          <h4>S.O.S for Humanitarian Actions Site Redesign</h4>
+          <p>S.O.S for Humanitarian Actions is an Atlanta-based non-profit who's 
+            website was sending out an "SOS". I redesigned the site to be more
+            trustworthy and transparent in order to encourage more donations.</p>
+          <button>View Project</button>
+        </div>
+      </div>
     </section>
-<!-- My skills section Hw18-->
-<section id="mySkills" class="skillSection">
-    <h1 class="h1" id="headline"> My skills
-    </h1>
-    <div class="skillContainer">
-     <div class="skillsBox">
-         <img src="images/creativity.png" class="skillImg">
-         <h2 class="subHeadline"> Creativity
-         </h2>
-         <p class="p">
-                Brainstorming, especially over coffee, is a treat for me. 
-                I try to approach problems knowing that more than one solutution 
-                can exist. Often nature and craftsmanship from the past are sources
-                of inspiration to me.
-        </p>
-     </div>
-     <div class="skillsBox">
-        <img src="images/wireframing.png" class="skillImg">
-         <h2 class="subHeadline"> Wire-framing &<br> prototyping
-        </h2>
-        <p class="p">
-               I approach wire-framing and prototyping from the perspective 
-               that 'less is more'. Sites and apps should be easy for the user to navigate
-               and intuitive to understand. My favorite tools are Figma, Miro, and InVision.
-        </p>
-        </ul>
-     </div>
-     <div class="skillsBox">
-         <img src="images/projmang.png" class="skillImg">
-         <h2 class="subHeadline"> Project Management
-         </h2>
-         <p class="p">
-                I am a planner and logically-minded by nature, so Project
-                management comes easily to me. In my latest project, I facilitated 
-                daily stand-ups and assigned task according to team member effieciencies.
-         </p>
-     </div>
-    </div>
-</section>
-
-<!-- My work section HW18-->
-<section id="myWork">
-    <h1 class="h1"> My Work
-    </h1>
-    <div class="workGrid">
-        <div class="imageBox">
-            <img src="images/Houndooglemobile.png" class="workImg">
-        </div>
-        <div class="caseStudyBox" id="houndDoogle">
-             <h2 class="subHeadline"> Houndoogle
-            </h2>
-             <p class="p">
-             Houndoogle us an original mobile app deisgned by dog owners
-             for dog owners. It's goal is to make finding vets, parks
-             shops, and other dog-friendly places easier for dog owners.
-             </p>   
-             <button type="button" class="button"> View Project
-             </button>     
-        </div>
-        <div class="imageBox2">
-            <img src="images/DOImobile.png" class="workImg">
-        </div>
-        <div class="caseStudyBox" id="DotI">
-            <h2 class="subHeadline"> Department of the Interior Site Redesign
-            </h2>
-            <p class="p">
-             The Dept. of the Interior website embodies the term "goverment issued."
-             I redesigned the site to be more enjoyable to navigate and the capture
-             the spirit of those the DOI serves
-            </p>    
-            <button type="button" class="button"> View Project
-            </button>   
-        </div>
-        <div class="imageBox3">
-            <img src="images/SOSmobile.png" class="workImg">
-        </div>
-        <div class="caseStudyBox" id="SoS">
-            <h2 class="subHeadline"> S.O.S for Humanitarian <br>Actions Site Redesign
-            </h2>
-            <p class="p">
-             S.O.S for Humanitarian Actions is an Atlanta-based non-profit who's 
-             website was sending out an "SOS". I redesigned the site to be more
-             trustworthy and transparent in order to encourage more donations.
-             </p>    
-             <button type="button" class="button"> View Project
-            </button>   
-        </div>
-    </div>
-</section>
-
-<!-- footer with contact info and social media buttons HW17-->
-<footer class="footer">
-    <div class="socialMediaButtons" >
-        <button type="button" class="button" id="gitHub"> gitHub
-        </button>
-        <button type="button"  class="button" id="instagram"> instagram
-        </button>
-        <button type="button" class="button" id="linkedIn"> linkedIn
-        </button>
-    </div>
-    <h3 class="h3">
-       andyreese.ga@gmail.com | 706-718-5520 | Columbus, Ga <br>
-       Andrew D. Reese copyright 2020
-    </h3>
-</footer>
-
-</body>
-<script src="js/index.js">
-</script>
+    <footer>
+      <ul>
+        <li id="About">ABOUT</li>
+        <li id="Skills">SKILLS</li>
+        <li id="Work">WORK</li>
+        <li>CONTACT</li>
+      </ul>
+    </footer>
+  </body>
+  <script src="js/index.js">
+  </script>
 </html>

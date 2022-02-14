@@ -1,235 +1,235 @@
-/*style sheet*/
-
-/* added smooth scrolling for HW19*/
-html {
-    scroll-behavior: smooth;
+body {
+  margin: 0;
 }
-/* header component */
-.header {
-    background-color: #3a2d32;
-    border: none;
-    padding: 10px; 
+h1{
+  font-family: 'Fugaz One', cursive;
+  font-size: 40px;
 }
-/* navigation buttons container */  
-.inline-block {
-    display: inline-block;
-    padding: 1%;
-}
-/* logo from image */ 
 .logo {
-    height: 125px;
-    vertical-align: middle;
-}    
-/* navigation buttons individual with text */ 
+  height: 100px;
+}
+header {
+  background-color: #3a2d32;
+  padding: 15px;
+}
+header ul {
+  float: right;
+  color: white;
+}
 header li {
-    color: white;
-    display: inline-block;
-    font-size: 24px;
-    font-family:'Montserrat', sans-serif;
-    position: relative;
-    vertical-align: middle;
-    margin: 40px;
- }
-/* container for hero image and welcome text */
-.heroImgBox{
-    width: 100%;
-    height: 650;
-    position: relative;
-    text-align: center;
+  display: inline-block;
+  padding: 15px 15px;
+  font-family:'Montserrat', sans-serif;
+  font-size: 24px;
 }
-/* container for welcome text */
-.textBox {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
- }
-/* welcome text */ 
-.h1 { 
-    font-family:'Oleo Script', cursive;
-    color: white;
-     font-size: 64px;
-    font-weight: 600;
+header p {
+  display: inline-block;
 }
-/* container for about me text, resume button, and headshot */
-.AboutMe {
-    background-color: #3a2d32f5;
-    border: none;
-    padding: 5%;
-    width: 100%;
-    height: 750px;
+.heroImg {
+  background-color: #EBEBEB;
+  padding: 25px 15px;
+  background-image: url(../images/heroimage3.png);
 }
-.aboutBlock {
-    display: inline-block;
+.heroflex{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
 }
-/* personal headshot image */
-.bioImg { 
-    width: 35%;
-    height: 60%;
-    border-radius: 10px;
+.bioimage{
+  height: 225px;
+  border-radius: 15px;
 }
-/*container for about me text*/
-.aboutMeText {
-    width: 56%;
-    height: 80%;
+.content {
+  max-width: 30%;
+  min-height: 200px;
+  margin: 0 auto;
+  padding: 50px;
+  background-color: transparent;
+  color: white;
+  text-align: center;
+  font-size: 22px;
+  font-family:'Montserrat', sans-serif;
+}
+button {
+  padding: 15px;
+  background-color: #5b794a;
+  color: white;
+  font-size: 20px;
+  border-radius: 8px;
+  border: 0;
+}
+button:hover{
+  background-color: #619e3d;
+}
+button:active{
+  background-color: #619e3d;
+  box-shadow: 0 5px #666;
+  transform: translateY(5px);
+}
+footer {
+  background-color: #3a2d32;
+  padding: 5px;
+  color: white;
+  position: static;
+}
+footer ul {
+  list-style: none;
+  padding-left: 5px;
+}
+footer li {
+  display: inline-block;
+  padding: 0px 7px;
+  font-family:'Montserrat', sans-serif;
+  font-size: 24px;
+}
+.heading {
+  margin: 0;
+  padding: 20px;
+  text-align: center;
+  font-size: 40px;
+  font-family:'Fugaz One', cursive;
+  background-color: #3a2d32;
+  color: white;
+}
+/* My UX Skills Section */
+.flexContainer {
+  display: flex;
+  padding: 60px 30px;
+  background-color: #3a2d32;
+  color: white;
+  justify-content: center;
+  align-items: center;
+}
+.flexContainer div {
+  width: 33%;
+  padding: 25px;
+  font-family:'Montserrat', sans-serif;
+  font-size: 22px;
+  ;
 }
 
-/* about me text */ 
-.h2 {
-    font-family:'Montserrat', sans-serif;
-    font-size: 24px;
-    color: white;
-    text-align: left;
-    padding-top: 20%;
-    padding-bottom: 20%;
-    padding-left: 7%;
-    padding-right: 7%;
+/* My Work Section */
+.myWork {
+  margin: 0;
+  padding: 60px 30px;
+  padding-top: 0;
+  background-color: #3a2d32f5;
+  color: white;
+}
+.workGrid {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  grid-template-rows: 350px 350px 350px;
+  grid-template-areas:
+  "img1 content1"
+  "img2 content2"
+  "img3 content3"
+  ;
+}
+.headingwork {
+  margin: 0;
+  padding: 20px;
+  text-align: center;
+  font-size: 40px;
+  font-family: 'Fugaz One', cursive;
+  color: white;
+}
+.workGrid img {
+  width: 100%;
+  max-width: 600px;
+  margin: 0 auto;
+  display: block;
+  border-radius: 15px;
+}
+.img1 {
+  grid-area: img1;
+}
+.img2 {
+  grid-area: img2;
+}
+.img3 {
+  grid-area: img3;
+}
+.img1, .img2, .img3, .content1, .content2, .content3 {
+  padding: 80px;
+}
+.content1 {
+  grid-area: content1;
+  font-size: 22px;
+  font-family:'Montserrat', sans-serif;
+}
+.content2 {
+  grid-area: content2;
+  font-size: 22px;
+  font-family:'Montserrat', sans-serif;
+}
+.content3 {
+  grid-area: content3;
+  font-size: 22px;
+  font-family: 'Montserrat', sans-serif;
+}
+.workimg{
+  border-radius: 10px;
 }
 
-/* My skills section coded with CSS flex*/
-.skillSection {
-    background-color: #3a2d32;
-    width: 100%;
-    height: 700px;
-    text-align: left;
-    padding-left: 5%;
-    padding-right: 5%;
-    padding-top: 2%;
-    padding-bottom: 2%;
+/* Modal*/
+/* The Modal (background) */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  padding-top: 100px; /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
 }
-.skillContainer{
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-evenly;
-    height: 400px;
-    width: 100%;
+
+/* Modal Content */
+.modal-content {
+  background-color: #3a2d32f5;
+  margin: auto;
+  padding: 20px;
+  border: 0px ;
+  width: 50%;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 24px;
 }
-.skillsBox {
+
+/* The Close Button */
+.close {
+  color: white;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+/* hw19 */
+@media only screen and (max-width: 600px){
+  .flexContainer div{
     display: flex;
     flex-direction: column;
-    text-align: left;
-    font-family: 'Montserrat', sans-serif;
-    color: white;
-    align-items: space-around;
-    width: 250px;
-    height: 400px;
-}
-.skillImg{
-    margin-left: auto;
-    margin-right: auto;
-    display: block;
     width: 100%;
-    border-radius: 8%;
-}
-/* my work section coded with CSS grid*/
-#myWork{
-    background-color: #3a2d32f5;
-    height: 900px;
-    width: 100%;
-    padding-left: 5%;
-    padding-right: 5%;
-    padding-top: 2%;
-    padding-bottom: 2%;
-}
-#houndDoogle{
-    grid-area: houndDoogle;
-}
-#DotI{
-    grid-area: DotI;
-} 
-#SoS{
-    grid-area: SoS;
-}
-.imageBox{
-    grid-area: imageBox;
-    align-items: center;
-    justify-content: center;
-}
-.imageBox2{
-    grid-area: imageBox2;
-    align-items: center;
-    justify-content: center;
-}
-.imageBox3{
-    grid-area: imageBox3;
-    align-items: center;
-    justify-content: center;
-}
-.workImg{
-    border-radius: 10px;
-    height: 300px;
-    width: 200px;
-}
-.workGrid{
-    margin: 0px 5%;
-    display: grid;
-    grid-template-rows: auto auto;
-    grid-template-columns: auto auto auto; 
-    grid-template-areas: 'imageBox imageBox2 imageBox3'
-                            'houndDoogle DotI SoS';
-}
-.caseStudyBox{
-    font-family: 'Montserrat', sans-serif;
-    color: white;
-    align-content: flex-start;
-    width: 300px;
-    height: 400px;
-}
-.button {
-    background-color: #6f6452; 
-    border: none;
-    border-radius: 6px;
-    color: white;
-    padding: 15px 32px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 16px;
-}
-/* footer with contact info and social media buttons */
-.footer {
-    background-color:#3a2d32;
-    position:relative;
-    width: 100%;
-    height: 200px;
-    color: white;
-    text-align: center;
-    margin-top: 1px;
-    padding: 10px;
-}
-.socialMediaButtons {
-    display: inline-block;
-}
-/* attempted to use image to replace button, can't figure out how to make it work
-#gitHub{
-    background-image: url("../images/github.png");
-}*/
-.h3 { 
-    font-size: 16px;
-    font-family: 'Montserrat', sans-serif;
-}
+  }
+  .workGrid{
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-columns: 1fr;
+    grid-template-areas: "img1"
+                          "content1"
+                          "img2"
+                          "content2"
+                          "img3"
+                          "content3";
 
-/* mobile query HW18*/
-@media only screen and (max-width: 600){
-    .skillContainer{
-        display: flex;
-        flex-direction: column;
-        align-items: flex-start;
-        justify-content: space-evenly;
-        width: 100%;
-    }
-    .workGrid{
-        margin: 0px 5%;
-        display: grid;
-        grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
-        grid-template-columns: 100%;
-        grid-template-areas:
-                            'imageBox'
-                            'houndDoogle'
-                            'imageBox2'
-                            'DotI'
-                            'imageBox3'
-                            'SoS';
-    }
+  }
 }
