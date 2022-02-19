@@ -29,6 +29,7 @@ header p {
   background-color: #EBEBEB;
   padding: 25px 15px;
   background-image: url(../images/heroimage3.png);
+  background-repeat: no-repeat;
 }
 .heroflex{
   display: flex;
@@ -103,10 +104,16 @@ footer li {
 }
 .flexContainer div {
   width: 33%;
-  padding: 25px;
+  padding: 30px;
   font-family:'Montserrat', sans-serif;
   font-size: 22px;
+  align-content: center
+
   ;
+}
+.skillImg{
+  height: 200px;
+  border-radius: 5px;
 }
 
 /* My Work Section */
@@ -222,6 +229,7 @@ footer li {
     width: 100%;
   }
   .workGrid{
+    display: grid;
     grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
     grid-template-columns: 1fr;
     grid-template-areas: "img1"
